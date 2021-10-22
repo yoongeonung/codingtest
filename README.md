@@ -1,12 +1,12 @@
 # コーディングテストテスト / 코딩테스트
 
 ## 学習資料 / 학습자료
-![백준이미지](https://d2gd6pc034wcta.cloudfront.net/images/logo@2x.png)
+![백준이미지](http://onlinejudgeimages.s3-ap-northeast-1.amazonaws.com/images/boj-og-1200.png)
 - [Baekjoon / 백준](https://www.acmicpc.net/)
 
-![](https://programmers.co.kr/assets/bi-programmers-light-0d164d49b51a123bab5cca11106145d6fac5a5ac04b8646780369c2a5bc0dd79.png)
+![](https://programmers.co.kr/assets/img-meta-programmers-e00862a7c9acd8ef5164f8c85b3ab0127d083ab59b3a98d7219690bd3570bf35.png)
 - [Programmers / 프로그래머스](https://programmers.co.kr/)
 
-![](https://paiza.jp/images/ds/logo/learning/white.svg)
+![](https://andcareer.co.jp/wp-content/uploads/paiza.jpg)
 - [Paiza / 파이자](https://paiza.jp/challenges)
 
