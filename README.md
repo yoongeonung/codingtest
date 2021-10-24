@@ -6,7 +6,3 @@
 
 ![](https://programmers.co.kr/assets/img-meta-programmers-e00862a7c9acd8ef5164f8c85b3ab0127d083ab59b3a98d7219690bd3570bf35.png)
 - [Programmers / 프로그래머스](https://programmers.co.kr/)
-
-![](https://andcareer.co.jp/wp-content/uploads/paiza.jpg)
-- [Paiza / 파이자](https://paiza.jp/challenges)
-
