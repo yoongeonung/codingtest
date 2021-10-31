@@ -10,6 +10,7 @@ public class Q1330 {
         String[] strings = br.readLine().split(" ");
         int a = Integer.parseInt(strings[0]);
         int b = Integer.parseInt(strings[1]);
+        // 일반적인 if문: 76ms
         if (a > b) {
             System.out.println(">");
         } else if (b > a) {
@@ -17,5 +18,7 @@ public class Q1330 {
         }else {
             System.out.println("==");
         }
+        // 삼항연산자:  84ms 코드의 길이는 짧아지나 속도는 느려지고 가독성도 좋아진다고 보기 어려움.
+        System.out.println(a > b ? ">" : a < b ? "<" : "==");
     }
 }
