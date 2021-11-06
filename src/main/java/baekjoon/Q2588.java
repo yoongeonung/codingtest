@@ -22,9 +22,14 @@ public class Q2588 {
 
 
         // 4ms 빠른 버전 (76ms)
+        // 세자릿수 곱셈
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String fLine = br.readLine();
         String sLine = br.readLine();
+        multiply(fLine, sLine);
+    }
+
+    private static void multiply(String fLine, String sLine) {
         int tLine = Integer.parseInt(fLine) * Integer.parseInt(sLine.split("")[2]);
         int fourthLine = Integer.parseInt(fLine) * Integer.parseInt(sLine.split("")[1]);
         int fifthLine = Integer.parseInt(fLine) * Integer.parseInt(sLine.split("")[0]);
