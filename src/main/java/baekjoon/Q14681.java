@@ -5,9 +5,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Q14681 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+        int x = Integer.parseInt(br.readLine());
+        int y = Integer.parseInt(br.readLine());
         // version 1 : 76ms
 //        try {
 //            int x = Integer.parseInt(br.readLine());
@@ -26,24 +27,23 @@ public class Q14681 {
 //        }
 
         // version 2 : 76ms
-        try {
-            int x = Integer.parseInt(br.readLine());
-            int y = Integer.parseInt(br.readLine());
-            if (x > 0) {
-                if (y > 0) {
-                    System.out.println(1);
-                } else {
-                    System.out.println(4);
-                }
+        // 4분면 판단
+        quater(x, y);
+    }
+
+    private static void quater(int x, int y) {
+        if (x > 0) {
+            if (y > 0) {
+                System.out.println(1);
             } else {
-                if (y > 0) {
-                    System.out.println(2);
-                } else {
-                    System.out.println(3);
-                }
+                System.out.println(4);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } else {
+            if (y > 0) {
+                System.out.println(2);
+            } else {
+                System.out.println(3);
+            }
         }
     }
 }
