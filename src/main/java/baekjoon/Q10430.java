@@ -13,10 +13,16 @@ public class Q10430 {
         int a = Integer.parseInt(strings[0]);
         int b = Integer.parseInt(strings[1]);
         int c = Integer.parseInt(strings[2]);
+        print(a, b, c);
+    }
+
+    private static void print(int a, int b, int c) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append((a + b) % c).append("\n");
-        stringBuilder.append(((a % c) + (b % c)) % c).append("\n");;
-        stringBuilder.append((a * b) % c).append("\n");;
+        stringBuilder.append(((a % c) + (b % c)) % c).append("\n");
+        ;
+        stringBuilder.append((a * b) % c).append("\n");
+        ;
         stringBuilder.append(((a % c) * (b % c)) % c);
         System.out.println(stringBuilder);
     }
