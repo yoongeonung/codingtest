@@ -1,3 +1,10 @@
 /out
 /src/test
 .idea
+.gradle
+gradle
+out
+build.gradle
+gradlew
+gradlew.bat
+settings.gradle
