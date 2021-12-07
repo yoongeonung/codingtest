@@ -5,21 +5,22 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Q11021 {
+public class Q11022 {
     /**
      * 두 정수 A와 B를 입력받은 다음, A+B를 출력하는 프로그램을 작성하시오.
      */
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder strb = new StringBuilder();
-
         int count = Integer.parseInt(br.readLine());
-        // i 를 + 연산해서 붙이는것보다 append가 더 느리게 나옴... 백준이 문제?
+        StringBuilder builder = new StringBuilder();
+
         for (int i = 1; i <= count; i++) {
-            StringTokenizer stk = new StringTokenizer(br.readLine());
-            strb.append("Case #").append(i).append(": ")
-                    .append(Integer.parseInt(stk.nextToken()) + Integer.parseInt(stk.nextToken())).append("\n");
+            StringTokenizer tokenizer = new StringTokenizer(br.readLine());
+            int a = Integer.parseInt(tokenizer.nextToken());
+            int b = Integer.parseInt(tokenizer.nextToken());
+            // Case #1: 1 + 1 = 2
+            builder.append("Case #").append(i).append(": ").append(a).append(" + ").append(b).append(" = ").append(a+b).append("\n");
         }
-        System.out.println(strb);
+        System.out.println(builder);
     }
 }
