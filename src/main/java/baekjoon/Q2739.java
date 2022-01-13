@@ -20,7 +20,7 @@ public class Q2739 {
 
     public static void multiplication(Integer num) {
         for (int i = 1; i < 10; i++) {
-            System.out.printf("%d * %d = %d\n",num,i,num*i);
+            System.out.printf("%d * %d = %d\n", num, i, num * i);
         }
     }
 

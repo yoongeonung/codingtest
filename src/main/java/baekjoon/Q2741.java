@@ -14,7 +14,7 @@ public class Q2741 {
          * 왠지 IDE는 parseInt와 int를 권장, 연산하기 쉽기때문인가?
          */
         int count = Integer.parseInt(br.readLine());
-        for (int i = 1; i <= count ; i++) {
+        for (int i = 1; i <= count; i++) {
             // + 연산이 발생해서인가 append()를 사용하는것보다 느림
             // strb.append(i + "\n");
             strb.append(i).append("\n");

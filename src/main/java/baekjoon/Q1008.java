@@ -16,7 +16,7 @@ public class Q1008 {
             String[] strings = br.readLine().split(" ");
             Double a = Double.valueOf(strings[0]);
             Double b = Double.valueOf(strings[1]);
-            System.out.println( a / b);
+            System.out.println(a / b);
         } catch (IOException e) {
             e.printStackTrace();
         }

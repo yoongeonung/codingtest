@@ -19,7 +19,7 @@ public class Q11022 {
             int a = Integer.parseInt(tokenizer.nextToken());
             int b = Integer.parseInt(tokenizer.nextToken());
             // Case #1: 1 + 1 = 2
-            builder.append("Case #").append(i).append(": ").append(a).append(" + ").append(b).append(" = ").append(a+b).append("\n");
+            builder.append("Case #").append(i).append(": ").append(a).append(" + ").append(b).append(" = ").append(a + b).append("\n");
         }
         System.out.println(builder);
     }

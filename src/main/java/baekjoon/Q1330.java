@@ -20,7 +20,7 @@ public class Q1330 {
             System.out.println(">");
         } else if (b > a) {
             System.out.println("<");
-        }else {
+        } else {
             System.out.println("==");
         }
         // 삼항연산자:  84ms 코드의 길이는 짧아지나 속도는 느려지고 가독성도 좋아진다고 보기 어려움.

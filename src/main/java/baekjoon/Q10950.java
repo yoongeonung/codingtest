@@ -14,7 +14,7 @@ public class Q10950 {
         StringBuilder strb = new StringBuilder();
         for (int i = 0; i < count; i++) {
             String[] strs = br.readLine().split(" ");
-            strb.append(Integer.parseInt(strs[0]) + Integer.parseInt(strs[1])+"\n");
+            strb.append(Integer.parseInt(strs[0]) + Integer.parseInt(strs[1]) + "\n");
         }
         System.out.println(strb);
     }
