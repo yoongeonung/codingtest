@@ -18,5 +18,16 @@ public class Q10171 {
         stringBuilder.append("(  /  )\n");
         stringBuilder.append(" \\(__)|");
         System.out.println(stringBuilder);
+
+        // 세번째 풀이, stringbuilder보다 빠름
+        String[] cat = new String[]{
+                "\\    /\\",
+                " )  ( ')",
+                "(  /  )",
+                " \\(__)|"
+        };
+        for(int i = 0; i < cat.length ; i++){
+            System.out.println(cat[i]);
+        }
     }
 }
