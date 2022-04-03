@@ -10,9 +10,13 @@ public class Q2480 {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer tokenizer = new StringTokenizer(reader.readLine());
-        int firstSpotOnADice = tokenizer.nextToken().charAt(0) - '0';
-        int secondSpotOnADice = tokenizer.nextToken().charAt(0) - '0';
-        int thirdSpotOnADice = tokenizer.nextToken().charAt(0) - '0';
+        int[] dices = new int[3];
+        for (int i = 0; i < dices.length; i++) {
+            dices[i] = getSpotOnADice(tokenizer);
+        }
+        int firstSpotOnADice = dices[0];
+        int secondSpotOnADice = dices[1];
+        int thirdSpotOnADice = dices[2];
 
         // X->Y, Y->Z, X->Z
         if (firstSpotOnADice == secondSpotOnADice && secondSpotOnADice == thirdSpotOnADice) {
@@ -24,16 +28,12 @@ public class Q2480 {
         } else if (secondSpotOnADice == thirdSpotOnADice) {
             System.out.println(1000 + (secondSpotOnADice * 100));
         } else {
-            int[] dices = new int[]{firstSpotOnADice, secondSpotOnADice, thirdSpotOnADice};
-//            Arrays.sort(dices);
-//            System.out.println(dices[2] * 100);
-            int max = dices[0];
-            for (int i = 1; i < dices.length; i++) {
-                if (max < dices[i]) {
-                    max = dices[i];
-                }
-            }
-            System.out.println(max * 100);
+            Arrays.sort(dices);
+            System.out.println(dices[2] * 100);
         }
+    }
+
+    private static int getSpotOnADice(StringTokenizer tokenizer) {
+        return tokenizer.nextToken().charAt(0) - '0';
     }
 }
