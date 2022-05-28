@@ -10,7 +10,15 @@ public class Q10171 {
                         (  /  )
                          \\(__)|""";
         System.out.println(str);
-
+        String str2 = """
+                     ,r'"7
+            r`-_   ,'  ,/
+             \\. ". L_r'
+               `~\\/
+                  |
+                  |
+            """;
+        System.out.println(str2);
         // 두번째 풀이 : println 연타보다는 빠르고 용량이 적음
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("\\    /\\\n");
