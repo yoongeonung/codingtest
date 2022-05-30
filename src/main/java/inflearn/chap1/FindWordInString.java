@@ -10,6 +10,29 @@ public class FindWordInString {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     String str = br.readLine();
 
+    solutionOne(str);
+    solutionTwo(str);
+  }
+
+  private static void solutionTwo(String str) {
+    int maxLength = 0, whiteSpace = 0;
+    String theWord = "";
+
+    while ( (whiteSpace = str.indexOf(' ')) != -1) {
+      String word = str.substring(0, whiteSpace);
+      if (word.length() > maxLength) {
+        maxLength = word.length();
+        theWord = word;
+      }
+      str = str.substring(whiteSpace + 1);
+    }
+    if (str.length() > maxLength) {
+      theWord = str;
+    }
+    System.out.println(theWord);
+  }
+
+  private static void solutionOne(String str) {
     int maxLength = 0;
     String maxWord = "";
     String[] words = str.split(" ");
