@@ -1,7 +1,8 @@
 package main
 
-import FindChar "codingtest/1_findchar"
+import Reversal "codingtest/2_reversalstr"
 
 func main() {
-	FindChar.FindChar()
+	//FindChar.FindChar()
+	Reversal.ReversalStr()
 }
