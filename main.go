@@ -1,8 +1,13 @@
 package main
 
-import Reversal "codingtest/2_reversalstr"
+import (
+	__wordsinpragraph "codingtest/3_wordsinpragraph"
+	"fmt"
+)
 
 func main() {
 	//FindChar.FindChar()
-	Reversal.ReversalStr()
+	//Reversal.ReversalStr()
+	length, word := __wordsinpragraph.FindLongestWords()
+	fmt.Println(length, word)
 }
