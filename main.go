@@ -1,10 +1,11 @@
 package main
 
-import __reversalstrs "codingtest/4_reversalstrs"
+import __reverserune "codingtest/5_reverserune"
 
 func main() {
 	//FindChar.FindChar()
 	//Reversal.ReversalStr()
 	//length, word := __wordsinpragraph.FindLongestWords()
-	__reversalstrs.ReversalStrs()
+	//__reversalstrs.ReversalStrs()
+	__reverserune.ReverseRune()
 }
