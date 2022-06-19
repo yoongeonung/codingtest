@@ -1,6 +1,6 @@
 package main
 
-import __overlaprune "codingtest/6_overlaprune"
+import __palindrome "codingtest/7_palindrome"
 
 func main() {
 	//FindChar.FindChar()
@@ -8,5 +8,6 @@ func main() {
 	//length, word := __wordsinpragraph.FindLongestWords()
 	//__reversalstrs.ReversalStrs()
 	//__reverserune.ReverseRune()
-	__overlaprune.OverlapRune()
+	//__overlaprune.OverlapRune()
+	__palindrome.Palindrome()
 }
