@@ -1,6 +1,6 @@
 package main
 
-import __effectivepanlindrome "codingtest/8_effectivepanlindrome"
+import __extnum "codingtest/9_extnum"
 
 func main() {
 	//FindChar.FindChar()
@@ -10,5 +10,6 @@ func main() {
 	//__reverserune.ReverseRune()
 	//__overlaprune.OverlapRune()
 	//__palindrome.Palindrome()
-	__effectivepanlindrome.EffectivePanlindrome()
+	//panlin.EffectivePanlindrome()
+	__extnum.ExtractNum()
 }
