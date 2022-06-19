@@ -1,6 +1,6 @@
 package main
 
-import __palindrome "codingtest/7_palindrome"
+import __effectivepanlindrome "codingtest/8_effectivepanlindrome"
 
 func main() {
 	//FindChar.FindChar()
@@ -9,5 +9,6 @@ func main() {
 	//__reversalstrs.ReversalStrs()
 	//__reverserune.ReverseRune()
 	//__overlaprune.OverlapRune()
-	__palindrome.Palindrome()
+	//__palindrome.Palindrome()
+	__effectivepanlindrome.EffectivePanlindrome()
 }
