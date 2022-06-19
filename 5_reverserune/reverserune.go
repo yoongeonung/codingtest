@@ -7,10 +7,6 @@ import (
 	"regexp"
 )
 
-func isErr(err error) bool {
-	return err != nil
-}
-
 func ReverseRune() {
 	reader := bufio.NewReader(os.Stdin)
 	line, _, err := reader.ReadLine()
@@ -21,12 +17,12 @@ func ReverseRune() {
 	leftPointer := 0
 	rightPointer := len(runes) - 1
 	for leftPointer < rightPointer {
-		if matched, _ := isSpecialRune(runes, leftPointer); matched {
+		if isSpecialRune(runes, leftPointer) {
 			leftPointer++
-		} else if matched, _ := isSpecialRune(runes, rightPointer); matched {
+		} else if isSpecialRune(runes, rightPointer) {
 			rightPointer--
 		} else {
-			reverseARune(runes, leftPointer, rightPointer)
+			convertRune(runes, leftPointer, rightPointer)
 			leftPointer++
 			rightPointer--
 		}
@@ -34,10 +30,18 @@ func ReverseRune() {
 	fmt.Println(string(runes))
 }
 
-func reverseARune(runes []rune, leftPointer int, rightPointer int) {
+func isErr(err error) bool {
+	return err != nil
+}
+
+func convertRune(runes []rune, leftPointer int, rightPointer int) {
 	runes[leftPointer], runes[rightPointer] = runes[rightPointer], runes[leftPointer]
 }
 
-func isSpecialRune(runes []rune, pointer int) (bool, error) {
-	return regexp.MatchString("[^A-Z,^a-z]", string(runes[pointer]))
+func isSpecialRune(runes []rune, pointer int) bool {
+	matched, err := regexp.MatchString("[^A-Z,^a-z]", string(runes[pointer]))
+	if err != nil {
+		return false
+	}
+	return matched
 }
