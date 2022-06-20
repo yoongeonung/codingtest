@@ -5,10 +5,9 @@ import (
 	"strings"
 )
 
-var inputStr string = ""
-var outputStr string = ""
-
 func ReversalStr() {
+	inputStr := ""
+	outputStr := ""
 	_, err := fmt.Scanln(&inputStr)
 	if err != nil {
 		return

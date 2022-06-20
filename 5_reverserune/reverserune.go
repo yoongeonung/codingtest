@@ -10,7 +10,7 @@ import (
 func ReverseRune() {
 	reader := bufio.NewReader(os.Stdin)
 	line, _, err := reader.ReadLine()
-	if isErr(err) {
+	if hasErr(err) {
 		return
 	}
 	runes := []rune(string(line))
@@ -30,7 +30,7 @@ func ReverseRune() {
 	fmt.Println(string(runes))
 }
 
-func isErr(err error) bool {
+func hasErr(err error) bool {
 	return err != nil
 }
 

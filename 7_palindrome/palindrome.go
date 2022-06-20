@@ -10,7 +10,7 @@ import (
 func Palindrome() {
 	reader := bufio.NewReader(os.Stdin)
 	line, _, err := reader.ReadLine()
-	if err != nil {
+	if hasErr(err) {
 		return
 	}
 
@@ -28,4 +28,8 @@ func Palindrome() {
 	}
 	fmt.Println("OK")
 
+}
+
+func hasErr(err error) bool {
+	return err != nil
 }

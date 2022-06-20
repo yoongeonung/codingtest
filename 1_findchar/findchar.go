@@ -5,13 +5,13 @@ import (
 	"strings"
 )
 
-var str string = ""
-var theChar string = ""
-var count int = 0
-
 func FindChar() {
+	str := ""
+	theChar := ""
+	count := 0
+
 	_, err := fmt.Scanln(&str, &theChar)
-	if err != nil {
+	if hasErr(err) {
 		return
 	}
 	upperedStr := strings.ToUpper(str)
@@ -22,4 +22,8 @@ func FindChar() {
 		}
 	}
 	fmt.Println(count)
+}
+
+func hasErr(err error) bool {
+	return err != nil
 }

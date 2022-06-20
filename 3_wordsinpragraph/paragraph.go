@@ -10,7 +10,7 @@ import (
 func FindLongestWords() (int, string) {
 	reader := bufio.NewReader(os.Stdin)
 	strs, _, err := reader.ReadLine()
-	if err != nil {
+	if hasErr(err) {
 		return 0, ""
 	}
 	splited := strings.Split(string(strs), " ")
@@ -25,4 +25,8 @@ func FindLongestWords() (int, string) {
 		}
 	}
 	return maxLength, maxWords
+}
+
+func hasErr(err error) bool {
+	return err != nil
 }

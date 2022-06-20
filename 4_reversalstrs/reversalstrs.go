@@ -10,14 +10,14 @@ import (
 func ReversalStrs() {
 	reader := bufio.NewReader(os.Stdin)
 	line, _, err := reader.ReadLine()
-	if isErr(err) {
+	if hasErr(err) {
 		return
 	}
 	count, _ := strconv.Atoi(string(line))
 	stringsBox := make([]string, count)
 	for i := 0; i < count; i++ {
 		line, _, err := reader.ReadLine()
-		if isErr(err) {
+		if hasErr(err) {
 			return
 		}
 		strs := []rune(string(line))
@@ -29,6 +29,6 @@ func ReversalStrs() {
 	fmt.Println(stringsBox)
 }
 
-func isErr(err error) bool {
+func hasErr(err error) bool {
 	return err != nil
 }

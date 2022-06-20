@@ -11,7 +11,7 @@ import (
 func EffectivePanlindrome() {
 	reader := bufio.NewReader(os.Stdin)
 	line, _, err := reader.ReadLine()
-	if err != nil {
+	if hasErr(err) {
 		return
 	}
 	re := regexp.MustCompile("[^A-Z]")
@@ -26,4 +26,8 @@ func EffectivePanlindrome() {
 		return
 	}
 	fmt.Println("YES")
+}
+
+func hasErr(err error) bool {
+	return err != nil
 }
