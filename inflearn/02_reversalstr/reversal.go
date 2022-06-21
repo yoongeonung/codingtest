@@ -1,4 +1,4 @@
-package __reversalstr
+package _2_reversalstr
 
 import (
 	"fmt"

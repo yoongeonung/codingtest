@@ -1,4 +1,4 @@
-package __overlaprune
+package _6_overlaprune
 
 import (
 	"bufio"

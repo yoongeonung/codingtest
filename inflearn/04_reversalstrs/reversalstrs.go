@@ -1,4 +1,4 @@
-package __reversalstrs
+package _4_reversalstrs
 
 import (
 	"bufio"

@@ -1,4 +1,4 @@
-package __reverserune
+package _5_reverserune
 
 import (
 	"bufio"

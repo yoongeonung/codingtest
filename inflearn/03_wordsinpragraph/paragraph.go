@@ -1,4 +1,4 @@
-package __wordsinpragraph
+package _3_wordsinpragraph
 
 import (
 	"bufio"

@@ -1,4 +1,4 @@
-package __extnum
+package _9_extnum
 
 import (
 	"bufio"

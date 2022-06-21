@@ -1,4 +1,4 @@
-package __palindrome
+package _7_palindrome
 
 import (
 	"bufio"
