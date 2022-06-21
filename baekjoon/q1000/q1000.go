@@ -10,15 +10,18 @@ func Q1000() {
 	secdval := ""
 
 	_, err := fmt.Scanln(&firstval, &secdval)
-	if err != nil {
+	if hasErr(err) {
 		return
 	}
 	num1, _ := strconv.Atoi(firstval)
 	num2, _ := strconv.Atoi(secdval)
-	resultSum := sum(num1, num2)
-	fmt.Println(resultSum)
+	sum(num1, num2)
 }
 
-func sum(f, s int) int {
-	return f + s
+func hasErr(err error) bool {
+	return err != nil
+}
+
+func sum(f, s int) {
+	fmt.Println(f + s)
 }
