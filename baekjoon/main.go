@@ -1,9 +1,9 @@
 package main
 
 import (
-	"codingtest/baekjoon/q18108"
+	"codingtest/baekjoon/example"
 )
 
 func main() {
-	q18108.Q18108()
+	example.Square()
 }
