@@ -1,9 +1,7 @@
 package main
 
-import (
-	"codingtest/baekjoon/q1008"
-)
+import "codingtest/baekjoon/q10869"
 
 func main() {
-	q1008.Q1008()
+	q10869.Q10869()
 }
