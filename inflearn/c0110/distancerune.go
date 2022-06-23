@@ -1,4 +1,4 @@
-package _0_distancerune
+package c0110
 
 import (
 	"bufio"

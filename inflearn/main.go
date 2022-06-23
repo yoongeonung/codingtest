@@ -1,9 +1,7 @@
 package main
 
-import (
-	"codingtest/inflearn/10_distancerune"
-)
+import "codingtest/inflearn/c0111"
 
 func main() {
-	_0_distancerune.DistanceRune()
+	c0111.StringComp()
 }

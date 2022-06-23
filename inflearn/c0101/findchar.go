@@ -1,4 +1,4 @@
-package _1_findchar
+package c0101
 
 import (
 	"fmt"

@@ -1,4 +1,4 @@
-package _2_reversalstr
+package c0102
 
 import (
 	"fmt"

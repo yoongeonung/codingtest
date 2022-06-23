@@ -1,4 +1,4 @@
-package _8_effectivepanlindrome
+package c0108
 
 import (
 	"bufio"

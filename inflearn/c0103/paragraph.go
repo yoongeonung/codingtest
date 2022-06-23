@@ -1,4 +1,4 @@
-package _3_wordsinpragraph
+package c0103
 
 import (
 	"bufio"

@@ -1,4 +1,4 @@
-package _7_palindrome
+package c0107
 
 import (
 	"bufio"
