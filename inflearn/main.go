@@ -1,7 +1,9 @@
 package main
 
-import "codingtest/inflearn/c0111"
+import (
+	"codingtest/inflearn/c0112"
+)
 
 func main() {
-	c0111.StringComp()
+	c0112.TranslateCryptogram()
 }
