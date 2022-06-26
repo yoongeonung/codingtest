@@ -1,7 +1,7 @@
 package main
 
 import (
-	"codingtest/inflearn/c0112"
+	"codingtest/inflearn/chap01/c0112"
 )
 
 func main() {

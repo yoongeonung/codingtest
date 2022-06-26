@@ -7,6 +7,7 @@ import (
 )
 
 func TranslateCryptogram() {
+	// TODO 나중에 배열이 아니라 string 형으로 변환할것
 	var result []string
 	result = convertCryptoToBinary(result)
 	translateBinaryToStr(result)
