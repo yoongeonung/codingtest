@@ -1,7 +1,9 @@
 package main
 
-import "chap02/ch0201"
+import (
+	"chap02/ch0202"
+)
 
 func main() {
-	ch0201.PrintBiggerNum()
+	ch0202.SeeableStudent()
 }
